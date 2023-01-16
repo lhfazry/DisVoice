@@ -156,7 +156,7 @@ class Glottal:
         glottal = np.zeros(len(x))
 
         if GCIs is None:
-            sys.warn("not enought voiced segments were found to compute GCI")
+            print("not enought voiced segments were found to compute GCI")
             return glottal, g_iaif, GCIs
 
         start = 0
